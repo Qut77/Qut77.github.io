@@ -1,0 +1,167 @@
+*{
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+}
+header{
+    position: fixed;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color:#555ACE;
+    min-height: 70px;
+    width: 100%;
+}
+header .menu_link{
+    color:white;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 16px;
+}
+header .header_logo{
+    max-width: 287px;
+    max-height: 50px;
+}
+header .account{
+    min-width: 50px; 
+    min-height: 50px;
+    background: grey;
+    border-radius: 50%;
+}
+main{
+    display: flex;
+    height: 800px;
+    background: url(../img/fons/main\ fon.png) center/cover no-repeat;
+}
+main .main_promo_text{
+    position: absolute;
+    color:#555ACE;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 17px;
+    text-align: center;
+    line-height: 45px;
+    top: 20vh;
+    left: 10vw;
+}
+.promo{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+    
+}
+.promo .office, .promo .parking{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 500px;
+    min-height: 500px;
+
+}
+.promo .office .office_img, .promo .parking .parking_img{
+    max-width: 400px;
+    max-height: 400px;
+    margin-top: 20px;
+}
+.promo .office .office_subheader, .promo .parking .parking_subheader{
+    color:#48466D;
+    text-decoration: none;
+    line-height: 15px;
+    text-align:center;
+}
+.promo .office .office_text, .promo .parking .parking_text{
+    color:#48466D;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 15px;
+    text-align:center;
+}
+.promo .office .office_btn, .promo .parking .parking_btn{
+    margin-top: 19px;
+    width: 172px;
+    height: 46px;
+    background: linear-gradient(0deg, #555ACE 0%, #797cd1 100%);
+    box-shadow: inset 0px -3px 0px rgba(0, 0, 0, 0.12);
+    border-radius: 9px;
+    border:none;
+    color:#FFFFFF;
+    font-size: 14px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+.info{
+    background-color:#555ACE;
+    margin-top: 20px;
+    height: 200px;
+}
+.info .info_subheader{
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 20px;
+    text-align: center;
+    line-height: 45px;
+    color:white;
+}
+.info .info_list, .plan .plan_list{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 20px;
+    align-items:center;
+}
+.info .info_list .list_item{
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+}
+.info .info_list .list_item .item_img{
+    height: 50px;
+    width: 50px;
+}
+.info .info_list .list_item .item_text{
+    color:#ffffff;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 15px;
+    margin-top: 20px;
+    font-weight: 500;
+}
+.plan .plan_list .plan_item .plan_img{
+    height: 350px;
+    width: 350px;
+}
+.plan{
+    margin-top: 20px;
+}
+.plan .plan_list .plan_item{
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    max-width: 400px;
+}
+.plan .plan_subheader{
+    color:#555ACE;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 20px;
+    text-align: center;
+    line-height: 45px;
+}
+.plan .item_subheader{
+    color:#555ACE;
+    font-weight: 500;
+    font-size: 20px;
+    text-align: center;
+}
+.plan .plan_list .plan_item .plan_text{
+    color:#555ACE;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 15px;
+    margin-top: 20px;
+    font-weight: 500;
+    text-align: center;
+}
