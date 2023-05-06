@@ -1,0 +1,39 @@
+.parking{
+    margin-top: 20px;
+    display: flex;
+    justify-content: start;
+    flex-wrap: wrap;
+}
+.parking .place{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    max-width: 500px;
+}
+.parking .place .place_subheader{
+    color:#48466D;
+    text-decoration: none;
+    line-height: 15px;
+    text-align:center;
+}
+.parking .place .place_text{
+    color:#48466D;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 30px;
+    text-align:center;
+}
+.parking .place .place_btn{
+    margin-top: 19px;
+    width: 172px;
+    height: 46px;
+    background: linear-gradient(0deg, #555ACE 0%, #797cd1 100%);
+    box-shadow: inset 0px -3px 0px rgba(0, 0, 0, 0.12);
+    border-radius: 9px;
+    border:none;
+    color:#FFFFFF;
+    font-size: 14px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
