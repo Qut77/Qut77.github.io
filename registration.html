@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=], initial-scale=1.0">
+    <title>Регистрация - ParkEye</title>
+    <link rel="shortcut icon" href="img/icons/eye.png" type="image/png">
+    <link rel="stylesheet" href="css/general.css">
+    <link rel="stylesheet" href="css/style4.css">
+</head>
+<body>
+    <header>
+        <a href="index.html"><img class="header_logo" src="img/icons/logo.png" alt=""></a>
+        <a href="parking.html" class="menu_link">Парковка</a>
+        <a href="reviews.html" class="menu_link">Отзывы</a>
+        <a href="registration.html" class="menu_link">Зарегестрироваться</a>
+        <a href="avtorization.html" class="menu_link">Войти</a>
+        <a href="lk.html"><div class="account"></div></a>
+    </header>
+    <h1 class="header">Регистрация</h1>
+    <form>
+        <div class="container">
+        <label for="email">Email</label>
+        <input type="text" placeholder="Введите Email" name="email" required>
+
+        <label for="name">ФИО</label>
+        <input type="text" placeholder="Введите ФИО" name="name" required>
+
+        <label for="tel">Номер телефона</label>
+        <input type="tel" placeholder="Введите номер телефона" name="tel" required>
+    
+        <label for="psw">Пароль</label>
+        <input type="password" placeholder="Введите пароль" name="psw" required>
+    
+        <label for="psw-repeat">Подтверждение пароля</label>
+        <input type="password" placeholder="Подтвердите пароль" name="psw-repeat" required>
+        <hr>
+
+        <button type="submit" class="registerbtn">Зарегестрироваться</button>
+        </div>
+    
+        <div class="container signin">
+        <p>У вас уже есть аккаунт? <a href="avtorization.html">Войти</a>.</p>
+        </div>
+    </form>
+    <footer>
+        <p class="footer_text">Все права защищены © 2023</p>
+    </footer>
+</body>
+</html>

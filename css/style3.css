@@ -1,3 +1,8 @@
+body{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
 .header{
     color:#555ACE;
     text-transform: uppercase;
@@ -35,4 +40,19 @@
     font-size: 18px;
     line-height: 25px;
     padding-left: 50px;
+}
+.review_btn{
+    margin-top: 19px;
+    width: 172px;
+    height: 46px;
+    background: linear-gradient(0deg, #555ACE 0%, #797cd1 100%);
+    box-shadow: inset 0px -3px 0px rgba(0, 0, 0, 0.12);
+    border-radius: 9px;
+    border:none;
+    color:#FFFFFF;
+    font-size: 14px;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin-left: 50px;
+    cursor: pointer;
 }

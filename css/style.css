@@ -61,6 +61,7 @@ main .main_promo_text{
     font-size: 14px;
     font-weight: 400;
     text-transform: uppercase;
+    cursor: pointer;
 }
 .info{
     background-color:#555ACE;
