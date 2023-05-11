@@ -3,7 +3,11 @@
     font-family: 'Roboto', sans-serif;
     margin: 0;
 }
-
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
 header{
     z-index: 1;
     display: flex;
@@ -26,7 +30,7 @@ header .header_logo{
 header .account{
     min-width: 50px; 
     min-height: 50px;
-    background: grey;
+    background: url(../img/icons/user.png) center/cover no-repeat;
     border-radius: 50%;
 }
 footer{
@@ -36,7 +40,7 @@ footer{
     background-color:#555ACE;
     min-height: 70px;
     width: 100%;
-    margin-top: 20px;
+    margin-top: auto;
 }
 footer .footer_text{
     color:white;

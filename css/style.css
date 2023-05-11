@@ -1,10 +1,9 @@
 main{
     display: flex;
     height: 800px;
-    background: url(../img/fons/main\ fon.png) center/cover no-repeat;
+    background: url(../img/fons/main.png) center/cover no-repeat;
 }
 main .main_promo_text{
-    position: absolute;
     color:#555ACE;
     text-decoration: none;
     text-transform: uppercase;
@@ -12,8 +11,8 @@ main .main_promo_text{
     font-size: 17px;
     text-align: center;
     line-height: 45px;
-    top: 20vh;
-    left: 10vw;
+    margin-top: 15vh;
+    margin-left: 10vw;
 }
 .promo{
     display: flex;
@@ -62,6 +61,10 @@ main .main_promo_text{
     font-weight: 400;
     text-transform: uppercase;
     cursor: pointer;
+}
+.promo .office .office_btn:active, .promo .parking .parking_btn:active {
+    box-shadow:7px 6px 28px 1px rgba(0, 0, 0, 0.24);
+    transform: translateY(4px);
 }
 .info{
     background-color:#555ACE;
@@ -150,6 +153,7 @@ main .main_promo_text{
     border-radius: 5px; 
     padding: 16px;
     margin-top: 20px;
+    margin-bottom: 20px;
 }
   .review img {
     float: left; 

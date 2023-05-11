@@ -10,6 +10,7 @@
 .parking{
     width: 100%;
     margin-top: 20px;
+    margin-bottom: 20px;
 }
 .parking .place{
     display: flex;
@@ -48,4 +49,8 @@
     text-transform: uppercase;
     margin-left: 50px;
     cursor: pointer;
+}
+.parking .place .place_btn:active {
+    box-shadow:7px 6px 28px 1px rgba(0, 0, 0, 0.24);
+    transform: translateY(4px);
 }

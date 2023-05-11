@@ -55,4 +55,9 @@ body{
     text-transform: uppercase;
     margin-left: 50px;
     cursor: pointer;
+    margin-bottom: 20px;
+}
+.review_btn:active {
+    box-shadow:7px 6px 28px 1px rgba(0, 0, 0, 0.24);
+    transform: translateY(4px);
 }
