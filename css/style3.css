@@ -27,6 +27,15 @@ body{
     border-radius: 5px; 
     padding: 16px;
 }
+.reviews .review:hover {
+    -webkit-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    transform: scale(1.05);
+    transition: 1s;
+}
+.reviews .review:not(:hover) {
+    transition: 1s;
+}
 .reviews .review img{
     float: left; 
     margin-right: 20px; 

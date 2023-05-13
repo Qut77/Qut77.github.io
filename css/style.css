@@ -103,6 +103,15 @@ main .main_promo_text{
     margin-top: 20px;
     font-weight: 500;
 }
+.info .info_list .list_item .item_img:hover {
+    -webkit-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    transform: scale(1.2);
+    transition: 1s;
+}
+.info .info_list .list_item .item_img:not(:hover) {
+transition: 1s;
+}
 .plan .plan_list .plan_item .plan_img{
     height: 350px;
     width: 350px;
@@ -139,6 +148,15 @@ main .main_promo_text{
     font-weight: 500;
     text-align: center;
 }
+.plan .plan_list .plan_item .plan_img:hover {
+    -webkit-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    transform: scale(1.2);
+    transition-duration: 1s;
+}
+.plan .plan_list .plan_item .plan_img:not(:hover) {
+    transition: 1s;
+}
 .container{
     display: flex;
     flex-wrap: wrap;
@@ -155,17 +173,32 @@ main .main_promo_text{
     margin-top: 20px;
     margin-bottom: 20px;
 }
-  .review img {
+.review:hover{
+    box-shadow:
+    1px 1px #291b78,
+    2px 2px #291b78,
+    3px 3px #291b78,
+    4px 4px #291b78,
+    5px 5px #291b78,
+    6px 6px #291b78,
+    7px 7px #291b78;
+  -webkit-transform: translateX(-7px);
+  transform: translateX(-7px);
+  transition: 1s;
+}
+.review:not(:hover) {
+    transition: 1s;
+}
+.review img {
     float: left; 
     margin-right: 20px; 
     border-radius: 50%;
     width: 30%;
     height: 30%;
 }
-  .review span {
-    font-size: 18px;
-    margin-right: 15px;
-}
   .reviews{
     margin-top: 20px;
+}
+.review p{
+    line-height: 20px;
 }
