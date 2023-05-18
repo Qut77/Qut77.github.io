@@ -47,3 +47,12 @@ footer .footer_text{
     font-weight: 500;
     font-size: 16px;
 }
+.header{
+    color:#555ACE;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 30px;
+    text-align: center;
+    line-height: 45px;
+    margin-top: 20px;
+}
