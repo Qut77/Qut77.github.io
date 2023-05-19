@@ -16,5 +16,13 @@ function reserved(){
     }
   }
 function reviewed(){
-  alert("Вы оставили отзыв, спасибо.")
+  var name2 = document.Form2.name2.value;
+  var review = document.Form2.review.value;
+  if ((name2 == null || name2 == "") && (review == null || review == "")){
+    alert("Пожалуйста заполните все поля.")
+  }
+  else{
+    window.location.href='#close'
+    alert("Вы оставили отзыв, спасибо.")
+  }
 }

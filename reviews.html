@@ -38,17 +38,40 @@
         </div>
         <div class="review">
             <img src="img/icons/user.png" alt="avatar">
-            <p>Осипова София <br> г. Оренбург <br> Сайт очень удобный! Наконец отец не орет из-за того, что не может найти паркову. Теперь у него нет отговорок и он спокойно подвозит меня!</p>
+            <p>Осипова София <br> г. Оренбург <br> Сайт очень удобный! Наконец отец не ругается из-за того, что не может найти паркову. Теперь у него нет отговорок и он спокойно подвозит меня!</p>
         </div>
         <div class="review">
             <img src="img/icons/user.png" alt="avatar">
             <p>Кузнецова Наталья <br> г. Оренбург <br> Очень удобный способ зарезервировать парковочное место. Все легко и прозрачно. Чувствуется, что сервис действительно продуман для клиентов.</p>
         </div>
     </section>
-    <button class="review_btn" onclick="reviewed()">Добавить отзыв</button>
+    <button class="review_btn" onclick="window.location.href='#openModal'">Добавить отзыв</button>
     <footer>
         <p class="footer_text">Все права защищены © 2023</p>
     </footer>
+    <div id="openModal" class="modal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 class="header">Комментарий</h3>
+                    <a href="#close" title="Close" class="close">×</a>
+                </div>
+
+                <div class="modal-body">
+                    <div class="add_review">
+                        <form name="Form2">
+                        <label>Фамилия и Имя</label>
+                        <input id="name2" type="text" placeholder="Фамилия и имя">
+                        <br>    
+                        <label>Отзыв</label>
+                        <input id="review" type="text" placeholder="Отзыв">
+                        </form>
+                        <button type="submit" class="reviewbtn" onclick="reviewed()">Добавить</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>    
     <script src="script.js"></script>
 </body>
 </html>
