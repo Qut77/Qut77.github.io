@@ -3,56 +3,91 @@
     font-family: 'Roboto', sans-serif;
     margin: 0;
 }
+html{
+    scroll-behavior: smooth;
+}
 body {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
-  }
-header{
-    z-index: 1;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    background-color:#555ACE;
-    min-height: 70px;
-    width: 100%;
 }
-header .menu_link{
-    color:white;
-    text-decoration: none;
-    font-weight: 500;
-    font-size: 16px;
+.par{
+display: flex;
+justify-content: center;
 }
-header .header_logo{
-    max-width: 287px;
-    max-height: 50px;
-}
-header .account{
-    min-width: 50px; 
-    min-height: 50px;
-    background: url(../img/icons/user.png) center/cover no-repeat;
-    border-radius: 50%;
-}
-footer{
+.par .nav{
+    width: 1135px;
+    height: 100px;
+    border-radius: 80px;
+    background: rgba(0, 0, 0, 0.09);
+    backdrop-filter: blur(7.5px);
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color:#555ACE;
-    min-height: 70px;
-    width: 100%;
-    margin-top: auto;
+    margin-top: 50px;
+    position: absolute;
 }
-footer .footer_text{
-    color:white;
-    font-weight: 500;
+.par .nav .nav_text{
+    color: #FFF;
+    font-family: Roboto;
     font-size: 16px;
-}
-.header{
-    color:#555ACE;
-    text-transform: uppercase;
-    font-weight: 700;
-    font-size: 30px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
     text-align: center;
-    line-height: 45px;
-    margin-top: 20px;
+    text-decoration: none;
+    margin-left: 61px;
+    position: relative;
+}
+.par .nav .nav_text:before {
+    content: '';
+    top: 55px;
+    left: 0;
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: #FFF;
+    transition: 0.4s;
+    transform: scaleY(0);
+}
+.par .nav .nav_text:hover:before {
+    transform: scaleY(1);
+}
+.footer{
+    background:#000;
+    padding:30px 0px;
+    font-family: 'Play', sans-serif;
+    text-align:center;
+}
+
+.footer .row{
+width:100%;
+margin:1% 0%;
+padding:0.6% 0%;
+color:gray;
+font-size:0.8em;
+}
+
+.footer .row a{
+text-decoration:none;
+color:gray;
+transition:0.5s;
+}
+
+.footer .row a:hover{
+color:#fff;
+}
+
+.footer .row ul{
+width:100%;
+}
+
+.footer .row ul li{
+display:inline-block;
+margin:0px 30px;
+}
+
+.footer .row a i{
+font-size:2em;
+margin:0% 1%;
 }

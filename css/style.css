@@ -1,83 +1,96 @@
 main{
     display: flex;
-    height: 800px;
-    background: url(../img/fons/main.png) center/cover no-repeat;
-}
-main .main_promo_text{
-    color:#555ACE;
-    text-decoration: none;
-    text-transform: uppercase;
-    font-weight: 500;
-    font-size: 17px;
-    text-align: center;
-    line-height: 45px;
-    margin-top: 15vh;
-    margin-left: 10vw;
-}
-.promo{
-    display: flex;
-    justify-content: space-around;
-    margin-top: 20px;
-    
-}
-.promo .office, .promo .parking{
-    display: flex;
     flex-direction: column;
+    height: 1070px;
+    background: url(../img/fons/fon.png) center/cover no-repeat;
     justify-content: center;
     align-items: center;
-    max-width: 500px;
-    min-height: 500px;
-
 }
-.promo .office .office_img, .promo .parking .parking_img{
-    max-width: 400px;
-    max-height: 400px;
+main .main_promo_text{
+    color: #FFF;
+    text-align: center;
+    font-family: Roboto;
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    text-transform: uppercase;
+}
+main .main_text{
+    color: #FFF;
+    text-align: center;
+    font-family: Roboto;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 100;
+    line-height: normal;
+    padding: 20px;
+}
+main .btn{
     margin-top: 20px;
 }
-.promo .office .office_subheader, .promo .parking .parking_subheader{
-    color:#48466D;
-    text-decoration: none;
-    line-height: 15px;
-    text-align:center;
-}
-.promo .office .office_text, .promo .parking .parking_text{
-    color:#48466D;
-    text-decoration: none;
-    font-weight: 500;
-    font-size: 17px;
-    line-height: 15px;
-    text-align:center;
-}
-.promo .office .office_btn, .promo .parking .parking_btn{
-    margin-top: 19px;
-    width: 172px;
-    height: 46px;
-    background: linear-gradient(0deg, #555ACE 0%, #797cd1 100%);
-    box-shadow: inset 0px -3px 0px rgba(0, 0, 0, 0.12);
-    border-radius: 9px;
-    border:none;
-    color:#FFFFFF;
-    font-size: 14px;
-    font-weight: 400;
-    text-transform: uppercase;
+main .btn .reg_btn{
+    width: 151px;
+    height: 45px;  
+    border-radius: 5px;
+    border: 1px solid #FFF;
+    background: #FFF;
+    color: #000;
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
     cursor: pointer;
 }
-.promo .office .office_btn:active, .promo .parking .parking_btn:active {
-    box-shadow:7px 6px 28px 1px rgba(0, 0, 0, 0.24);
-    transform: translateY(4px);
+main .btn .avt_btn{
+    width: 118px;
+    height: 45px;
+    border-radius: 5px;
+    border: 1px solid #FFF;
+    color: #FFF;
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    background-color: rgba(256,256,256,0);
+    margin-left: 20px;
+    cursor: pointer;
+    transition: 0.3s ease-out;
+}
+main .btn .avt_btn:hover{
+    background: #FFF;
+    color: #000;
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    transition: 0.3s ease all;
+}
+main .arrow{
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
 }
 .info{
-    background-color:#555ACE;
+    background-color: #FBF9FA;
     margin-top: 20px;
     height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
 }
-.info .info_subheader{
-    text-transform: uppercase;
-    font-weight: 500;
-    font-size: 20px;
+.info .info_subheader, .plan .plan_subheader, .reviews .review_subheader, .plan .item_subheader{
     text-align: center;
-    line-height: 45px;
-    color:white;
+    color: #000;
+    font-family: Roboto;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    margin-top: 30px;
 }
 .info .info_list, .plan .plan_list{
     display: flex;
@@ -96,12 +109,14 @@ main .main_promo_text{
     width: 50px;
 }
 .info .info_list .list_item .item_text{
-    color:#ffffff;
-    font-weight: 500;
-    font-size: 17px;
-    line-height: 15px;
+    text-align: center;
+    color: #000;
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 100;
+    line-height: normal;
     margin-top: 20px;
-    font-weight: 500;
 }
 .info .info_list .list_item .item_img:hover {
     -webkit-transform: scale(1.2);
@@ -125,28 +140,15 @@ transition: 1s;
     align-items:center;
     max-width: 400px;
 }
-.plan .plan_subheader, .reviews .review_subheader{
-    color:#555ACE;
-    text-transform: uppercase;
-    font-weight: 500;
-    font-size: 20px;
-    text-align: center;
-    line-height: 45px;
-}
-.plan .item_subheader{
-    color:#555ACE;
-    font-weight: 500;
-    font-size: 20px;
-    text-align: center;
-}
 .plan .plan_list .plan_item .plan_text{
-    color:#555ACE;
-    font-weight: 500;
-    font-size: 17px;
-    line-height: 15px;
-    margin-top: 20px;
-    font-weight: 500;
+    color: #000;
     text-align: center;
+    font-family: Roboto;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 100;
+    line-height: normal;
+    padding: 20px;
 }
 .plan .plan_list .plan_item .plan_img:hover {
     -webkit-transform: scale(1.2);
@@ -163,42 +165,55 @@ transition: 1s;
     justify-content: space-evenly;
     align-items: center;
 }
-.review {
-    max-width: 300px;
-    min-height: 100px;
-    border: 2px solid #555ACE;
-    background-color: #797cd1;
-    border-radius: 5px; 
-    padding: 16px;
-    margin-top: 20px;
-    margin-bottom: 20px;
+.blog-card {
+display: flex;
+flex-direction: column;
+margin: 1rem auto;
+box-shadow: 0 3px 7px -1px rgba(#000, .1);
+margin-bottom: 1.6%;
+background: #fff;
+line-height: 1.4;
+font-family: sans-serif;
+border-radius: 5px;
+z-index: 0;
+width: 300px;
 }
-.review:hover{
-    box-shadow:
-    1px 1px #291b78,
-    2px 2px #291b78,
-    3px 3px #291b78,
-    4px 4px #291b78,
-    5px 5px #291b78,
-    6px 6px #291b78,
-    7px 7px #291b78;
-  -webkit-transform: translateX(-7px);
-  transform: translateX(-7px);
-  transition: 1s;
+.meta {
+position: relative;
+height: 200px;
 }
-.review:not(:hover) {
-    transition: 1s;
+.photo {
+position: absolute;
+top: 0;
+right: 0;
+bottom: 0;
+left: 0;
+background-size: cover;
+background-position: center;
 }
-.review img {
-    float: left; 
-    margin-right: 20px; 
-    border-radius: 50%;
-    width: 30%;
-    height: 30%;
+
+ul, li {
+display: inline-block;
 }
-  .reviews{
-    margin-top: 20px;
+
+.description {
+padding: 1rem;
+background: #fff;
+position: relative;
+z-index: 1;
 }
-.review p{
-    line-height: 20px;
+.description h1, .description h2 {
+font-family: Poppins, sans-serif;
+}
+h1 {
+line-height: 1;
+margin: 0;
+font-size: 1.7rem;
+}
+h2 {
+font-size: 1rem;
+font-weight: 300;
+text-transform: uppercase;
+color: #a2a2a2;
+margin-top: 5px;
 }
